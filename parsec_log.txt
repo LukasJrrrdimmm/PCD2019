@@ -1,0 +1,208 @@
+[PARSEC] Packages to build:  splash2x.water_spatial
+
+[PARSEC] [========== Building package splash2x.water_spatial [1] ==========]
+[PARSEC] [---------- Analyzing package splash2x.water_spatial ----------]
+[PARSEC] splash2x.water_spatial depends on: parmacs
+[PARSEC] [---------- Analyzing package parsec.parmacs ----------]
+[PARSEC] Package parsec.parmacs already exists, proceeding.
+[PARSEC] [---------- Building package splash2x.water_spatial ----------]
+[PARSEC] Copying source code of package splash2x.water_spatial.
+[PARSEC] Running 'env version=pthreads /usr/bin/make':
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 split.H > split.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 mdvar.H > mdvar.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 parameters.H > parameters.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 mddata.H > mddata.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 global.H > global.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 bndry.C > bndry.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread bndry.c
+
+bndry.C:36: note: not vectorized: multiple nested loops.
+bndry.C:46: note: not vectorized: multiple nested loops.
+bndry.C:51: note: not vectorized: too many BBs in loop.
+bndry.C:51: note: not vectorized: Bad inner loop.
+bndry.C:55: note: not vectorized: too many BBs in loop.
+bndry.C:26: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 water.H > water.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 wwpot.H > wwpot.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 cnst.H > cnst.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 frcnst.H > frcnst.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 fileio.H > fileio.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 cnstnt.C > cnstnt.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread cnstnt.c
+
+cnstnt.C:107: note: not vectorized: number of iterations cannot be computed.
+cnstnt.C:107: note: not vectorized: Bad inner loop.
+cnstnt.C:112: note: not vectorized: number of iterations cannot be computed.
+cnstnt.C:35: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 cshift.C > cshift.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread cshift.c
+
+cshift.C:55: note: not vectorized: too many BBs in loop.
+cshift.C:55: note: not vectorized: too many BBs in loop.
+cshift.C:55: note: not vectorized: too many BBs in loop.
+cshift.C:55: note: not vectorized: too many BBs in loop.
+cshift.C:33: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 initia.C > initia.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread initia.c
+
+initia.C:356: note: not vectorized: multiple nested loops.
+initia.C:357: note: not vectorized: multiple nested loops.
+initia.C:358: note: not vectorized: multiple nested loops.
+initia.C:360: note: not vectorized: unexpected loop form.
+initia.C:360: note: not vectorized: Bad inner loop.
+initia.C:361: note: not vectorized: unexpected loop form.
+initia.C:322: note: not vectorized: multiple nested loops.
+initia.C:323: note: not vectorized: multiple nested loops.
+initia.C:324: note: not vectorized: number of iterations cannot be computed.
+initia.C:324: note: not vectorized: Bad inner loop.
+initia.C:326: note: not vectorized: number of iterations cannot be computed.
+initia.C:237: note: not vectorized: multiple nested loops.
+initia.C:241: note: not vectorized: multiple nested loops.
+initia.C:245: note: not vectorized: multiple nested loops.
+initia.C:290: note: not vectorized: number of iterations cannot be computed.
+initia.C:247: note: not vectorized: unexpected loop form.
+initia.C:30: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 interf.C > interf.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread interf.c
+interf.C: In function ‘INTERF’:
+interf.C:201: warning: comparison between signed and unsigned integer expressions
+
+interf.C:253: note: Detected interleaving GG[K_3][0] and GG[K_3][1]
+interf.C:253: note: Detected interleaving GG[K_3][0] and GG[K_3][2]
+interf.C:253: note: Detected interleaving GG[K_3][1] and GG[K_3][2]
+interf.C:253: note: vect_model_store_cost: inside_cost = 3, outside_cost = 0 .
+interf.C:253: note: vect_model_simple_cost: inside_cost = 3, outside_cost = 0 .
+interf.C:253: note: Vectorizing an unaligned access.
+interf.C:253: note: Vectorizing an unaligned access.
+interf.C:253: note: not vectorized: unsupported unaligned store.
+interf.C:231: note: vectorized 0 loops in function.
+
+interf.C:63: note: not vectorized: multiple nested loops.
+interf.C:71: note: not vectorized: multiple nested loops.
+interf.C:72: note: not vectorized: multiple nested loops.
+interf.C:73: note: not vectorized: multiple nested loops.
+interf.C:109: note: not vectorized: multiple nested loops.
+interf.C:114: note: not vectorized: too many BBs in loop.
+interf.C:114: note: not vectorized: Bad inner loop.
+interf.C:149: note: not vectorized: too many BBs in loop.
+interf.C:30: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 intraf.C > intraf.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread intraf.c
+
+intraf.C:150: note: not vectorized: number of iterations cannot be computed.
+intraf.C:150: note: not vectorized: Bad inner loop.
+intraf.C:157: note: not vectorized: number of iterations cannot be computed.
+intraf.C:52: note: not vectorized: number of iterations cannot be computed.
+intraf.C:52: note: not vectorized: Bad inner loop.
+intraf.C:58: note: not vectorized: number of iterations cannot be computed.
+intraf.C:30: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 kineti.C > kineti.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread kineti.c
+
+kineti.C:38: note: not vectorized: multiple nested loops.
+kineti.C:44: note: not vectorized: number of iterations cannot be computed.
+kineti.C:44: note: not vectorized: Bad inner loop.
+kineti.C:53: note: not vectorized: number of iterations cannot be computed.
+kineti.C:28: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 randno.H > randno.h
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 mdmain.C > mdmain.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread mdmain.c
+mdmain.C: In function ‘MDMAIN’:
+mdmain.C:68: warning: comparison between signed and unsigned integer expressions
+mdmain.C:72: warning: comparison between signed and unsigned integer expressions
+mdmain.C:102: warning: comparison between signed and unsigned integer expressions
+mdmain.C:107: warning: comparison between signed and unsigned integer expressions
+mdmain.C:131: warning: comparison between signed and unsigned integer expressions
+mdmain.C:155: warning: comparison between signed and unsigned integer expressions
+mdmain.C:182: warning: comparison between signed and unsigned integer expressions
+
+mdmain.C:77: note: not vectorized: multiple nested loops.
+mdmain.C:182: note: not vectorized: too many BBs in loop.
+mdmain.C:155: note: not vectorized: too many BBs in loop.
+mdmain.C:131: note: not vectorized: too many BBs in loop.
+mdmain.C:107: note: not vectorized: too many BBs in loop.
+mdmain.C:102: note: not vectorized: too many BBs in loop.
+mdmain.C:44: note: not vectorized: multiple nested loops.
+mdmain.C:45: note: not vectorized: multiple nested loops.
+mdmain.C:46: note: not vectorized: number of iterations cannot be computed.
+mdmain.C:46: note: not vectorized: Bad inner loop.
+mdmain.C:56: note: not vectorized: number of iterations cannot be computed.
+mdmain.C:33: note: vectorized 0 loops in function.
+mdmain.C:38: warning: ‘XTT’ may be used uninitialized in this function
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 poteng.C > poteng.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread poteng.c
+poteng.C: In function ‘POTENG’:
+poteng.C:123: warning: implicit declaration of function ‘printf’
+poteng.C:123: warning: incompatible implicit declaration of built-in function ‘printf’
+poteng.C:123: warning: comparison between signed and unsigned integer expressions
+
+poteng.C:130: note: not vectorized: multiple nested loops.
+poteng.C:138: note: not vectorized: multiple nested loops.
+poteng.C:139: note: not vectorized: multiple nested loops.
+poteng.C:140: note: not vectorized: multiple nested loops.
+poteng.C:174: note: not vectorized: too many BBs in loop.
+poteng.C:174: note: not vectorized: Bad inner loop.
+poteng.C:177: note: not vectorized: too many BBs in loop.
+poteng.C:29: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 predcor.C > predcor.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread predcor.c
+
+predcor.C:44: note: not vectorized: multiple nested loops.
+predcor.C:54: note: not vectorized: multiple nested loops.
+predcor.C:60: note: not vectorized: multiple nested loops.
+predcor.C:61: note: not vectorized: multiple nested loops.
+predcor.C:62: note: not vectorized: number of iterations cannot be computed.
+predcor.C:62: note: not vectorized: Bad inner loop.
+predcor.C:66: note: not vectorized: number of iterations cannot be computed.
+predcor.C:30: note: vectorized 0 loops in function.
+
+predcor.C:102: note: not vectorized: multiple nested loops.
+predcor.C:111: note: not vectorized: multiple nested loops.
+predcor.C:113: note: not vectorized: multiple nested loops.
+predcor.C:114: note: not vectorized: too many BBs in loop.
+predcor.C:117: note: Unknown alignment for access: *curr_ptr_62
+predcor.C:117: note: Unknown alignment for access: *curr_ptr_62
+predcor.C:117: note: dependence distance  = 0.
+predcor.C:117: note: accesses have the same alignment.
+predcor.C:117: note: dependence distance modulo vf == 0 between curr_ptr_62->mol.F[func_82][dir_76][atom_80] and curr_ptr_62->mol.F[func_82][dir_76][atom_80]
+predcor.C:117: note: versioning for alias required: can't determine dependence between *D.3627D.3627_49 and curr_ptr_62->mol.F[func_82][dir_76][atom_80]
+predcor.C:117: note: mark for run-time aliasing test between *D.3627D.3627_49 and curr_ptr_62->mol.F[func_82][dir_76][atom_80]
+predcor.C:117: note: not vectorized: complicated access pattern.
+predcor.C:86: note: vectorized 0 loops in function.
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 syscons.C > syscons.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread syscons.c
+/usr/bin/m4 -s -Ulen -Uindex /home/lmgajardim/parsec_pthreads/parsec-3.0/pkgs/libs/parmacs/inst/amd64-linux.gcc/m4/parmacs.pthreads.c.m4 water.C > water.c
+/usr/bin/gcc -c  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread water.c
+water.C: In function ‘main’:
+water.C:354: warning: comparison between signed and unsigned integer expressions
+
+water.C:298: note: not vectorized: multiple nested loops.
+water.C:300: note: not vectorized: number of iterations cannot be computed.
+water.C:300: note: not vectorized: Bad inner loop.
+water.C:302: note: not vectorized: number of iterations cannot be computed.
+water.C:291: note: not vectorized: number of iterations cannot be computed.
+water.C:286: note: not vectorized: number of iterations cannot be computed.
+water.C:243: note: not vectorized: multiple nested loops.
+water.C:250: note: not vectorized: multiple nested loops.
+water.C:257: note: not vectorized: too many BBs in loop.
+water.C:257: note: not vectorized: too many BBs in loop.
+water.C:257: note: not vectorized: too many BBs in loop.
+water.C:257: note: not vectorized: too many BBs in loop.
+water.C:205: note: not vectorized: number of iterations cannot be computed.
+water.C:205: note: not vectorized: Bad inner loop.
+water.C:208: note: not vectorized: number of iterations cannot be computed.
+water.C:193: note: not vectorized: unexpected loop form.
+water.C:109: note: vectorized 0 loops in function.
+water.C:174: warning: ‘zprocs’ may be used uninitialized in this function
+/usr/bin/gcc bndry.o cnstnt.o cshift.o initia.o interf.o intraf.o kineti.o mdmain.o poteng.o predcor.o syscons.o water.o  -O3 -g -funroll-loops -fprefetch-loop-arrays -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=3.0-beta-20150206 -O3 -ftree-vectorize -ftree-vectorizer-verbose=6 -pg -fopenmp -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -DENABLE_THREADS -pthread -o water_spatial -L/usr/lib64 -L/usr/lib -lm  
+[PARSEC] Running 'env version=pthreads /usr/bin/make install':
+mkdir -p /home/lmgajardim/parsec_pthreads/parsec-3.0/ext/splash2x/apps/water_spatial/inst/amd64-linux.gcc/bin
+cp -f water_spatial /home/lmgajardim/parsec_pthreads/parsec-3.0/ext/splash2x/apps/water_spatial/inst/amd64-linux.gcc/bin/water_spatial
+cp -f run.sh /home/lmgajardim/parsec_pthreads/parsec-3.0/ext/splash2x/apps/water_spatial/inst/amd64-linux.gcc/bin/run.sh
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+
